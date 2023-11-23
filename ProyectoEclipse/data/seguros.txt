@@ -1,0 +1,2 @@
+2;perdida;700.0
+1;accidentes;250.0
