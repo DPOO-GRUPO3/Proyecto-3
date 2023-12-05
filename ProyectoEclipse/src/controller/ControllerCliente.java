@@ -113,7 +113,7 @@ private Temporada encontrarTemporada(LocalDateTime fecha) {
 	for(Temporada temp:datos.getMapaTemporadas().values()) {
 		LocalDateTime in=temp.getInicioTemporada();
 		LocalDateTime fin=temp.getFinTemporada();
-		if (hayFechaEnIntervalo(fecha,in,fin)==true) {
+		if (hayFechaEnIntervalo(fecha,in,fin)) {
 			return temp;
 		}	
 	}

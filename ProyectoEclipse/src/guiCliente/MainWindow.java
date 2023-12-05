@@ -21,16 +21,16 @@ public class MainWindow {
 	    
 	    //Config panel
 	    JPanel panel =new JPanel();
-	    frame.setSize(200, 200);
+	    frame.setSize(500, 500);
 	    frame.add(panel);
 	    panel.setLayout(null);
 	    
 	    // Botón LogIn
 	    JButton inicio = new JButton("LogIn");
-	    inicio.setBounds(10, 10, 120, 25);
+	    inicio.setBounds(200, 200, 120, 40);
 	    
 	    JButton sign = new JButton("SignIn");
-	    sign.setBounds(10, 40, 120, 25);
+	    sign.setBounds(200, 250, 120, 40);
 	    
         // Agregar ActionListener a los botones
         inicio.addActionListener(new ActionListener() {
@@ -38,6 +38,7 @@ public class MainWindow {
             public void actionPerformed(ActionEvent e) {
                 // Acción a realizar cuando se presiona el botón 1
                 System.out.println("Botón 1 presionado");
+                CostumerLogIn.LogInVentana();
                 
             }
         });
