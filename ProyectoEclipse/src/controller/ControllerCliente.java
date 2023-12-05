@@ -178,7 +178,7 @@ public void actualizarDatos() throws IOException {
 	datos.cargarTodosLosDatos();
 }
 public ArrayList<String> vehículosDisponiblesEnSedeEnFechaDada(LocalDateTime fecha,
-		Sede nombreSede){
+		String nombreSede){
 	ArrayList<String> carrosEnSede=new ArrayList<>();
 	HashMap<String,Carro> mapaCarros=datos.getMapaCarros();
 	
