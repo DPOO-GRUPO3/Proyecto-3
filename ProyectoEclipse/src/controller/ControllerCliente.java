@@ -60,6 +60,10 @@ public double crearReserva(String nombreCategoria, String sedeRec,
 	
 	for(Carro carro:mapaCarros.values()) {
 		LocalDateTime fechadisp=carro.getFechaDispCons();
+		// Descartamos por no ser de la categoría
+		if (carro.getCategoria().getNombre().equals(nombreCategoria)==false) {
+			continue;
+		}
 		if(fechadisp!=null && fechadisp.plusDays(2).isAfter(fechaPed1)) {
 			continue; //descartamos el carro por fecha disponibilidad
 		}
@@ -161,7 +165,8 @@ private boolean hayInterseccionIntervaloReservaConFechas(Reserva reserva,
 }
 private boolean hayFechaEnIntervalo(LocalDateTime fecha, LocalDateTime fecha1,
 		LocalDateTime fecha2) {
-	if(fecha.isAfter(fecha1) && fecha.isBefore(fecha2)) {
+	if((fecha.isAfter(fecha1) && fecha.isBefore(fecha2))||(fecha.isEqual(fecha1)
+			||fecha.isEqual(fecha2))) {
 		return true;
 	}
 	else {

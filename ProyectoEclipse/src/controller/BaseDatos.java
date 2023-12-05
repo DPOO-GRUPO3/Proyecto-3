@@ -386,6 +386,9 @@ while (linea != null) {
 	String id = partes[0];
 	Reserva reserva = reader.descomprimirReserva(linea, mapaSedes, mapaCategorias, mapaCarros, mapaClientes);
 	mapaReservas.put(id, reserva);
+	
+	// Añadir reserva a lista de reservas del carro
+	
 	linea = br.readLine();
 }
 br.close();
