@@ -7,6 +7,7 @@ import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import model.Alquiler;
 import model.Carro;
 import model.Categoria;
 import model.Cliente;
@@ -175,5 +176,38 @@ private boolean hayFechaEnIntervalo(LocalDateTime fecha, LocalDateTime fecha1,
 }
 public void actualizarDatos() throws IOException {
 	datos.cargarTodosLosDatos();
+}
+public ArrayList<String> vehículosDisponiblesEnSedeEnFechaDada(LocalDateTime fecha,
+		Sede nombreSede){
+	ArrayList<String> carrosEnSede=new ArrayList<>();
+	HashMap<String,Carro> mapaCarros=datos.getMapaCarros();
+	
+	for(Carro carro:mapaCarros.values()) {
+		Sede sedeCar=sedeEnLaQueEstaraUnCarrodadaFecha(carro, fecha);
+		if(nombreSede.equals(sedeCar.getNombre())) {
+			Writer w= new Writer();
+			carrosEnSede.add(w.comprimirCarro(carro));
+		}
+	}
+	
+	
+	return carrosEnSede;
+	
+}
+public Sede sedeEnLaQueEstaraUnCarrodadaFecha(Carro carro,LocalDateTime fecha) {
+	
+	Alquiler alquiler=carro.getUsoActual();
+	// Si no hay alquiler
+	if (alquiler==null) {
+		return carro.getSede();
+	}
+	//Si sí hay alquiler y termina  antes de la fecha
+	else if( fecha.isAfter(alquiler.getFechaDeb())) {
+		return alquiler.getSedeDevolucion();
+	}
+	//Si hay alquiler y termina después de la fecha
+	else {
+		return null;
+	}
 }
 }
