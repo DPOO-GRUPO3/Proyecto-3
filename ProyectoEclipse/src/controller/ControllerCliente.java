@@ -210,4 +210,7 @@ public Sede sedeEnLaQueEstaraUnCarrodadaFecha(Carro carro,LocalDateTime fecha) {
 		return null;
 	}
 }
+public void setCliente(Cliente cliente) {
+	this.cliente = cliente;
+}
 }

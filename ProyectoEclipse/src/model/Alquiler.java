@@ -151,4 +151,14 @@ public class Alquiler {
 	{
 		this.factura= factura;
 	}
+
+
+	public static int getNumAlqus() {
+		return numAlqus;
+	}
+
+
+	public static void setNumAlqus(int numAlqus) {
+		Alquiler.numAlqus = numAlqus;
+	}
 }

@@ -664,5 +664,11 @@ public void cargarTodosLosDatos() throws IOException {
 	//actualizarArchivoFacturas();
 	
 }
+public void setMapaClientes(HashMap<String, Cliente> mapaClientes) {
+	this.mapaClientes = mapaClientes;
+}
+public void setMapaReservas(HashMap<String, Reserva> mapaReservas) {
+	this.mapaReservas = mapaReservas;
+}
 }
 
