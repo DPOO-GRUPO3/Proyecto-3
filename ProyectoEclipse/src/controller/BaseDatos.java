@@ -181,7 +181,7 @@ private String generarTextoTarjetas(){
 	}
 	return texto;
 }
-private void actualizarArchivoTarjetas() throws IOException {
+public void actualizarArchivoTarjetas() throws IOException {
 	String texto=generarTextoTarjetas();
 	FileWriter fichero = new FileWriter("data/tarjetas.txt");
 	fichero.write(texto);
