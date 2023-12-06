@@ -216,7 +216,7 @@ private String generarTextoLicencias(){
 	}
 	return texto;
 }
-private void actualizarArchivoLicencias() throws IOException {
+public void actualizarArchivoLicencias() throws IOException {
 	String texto=generarTextoLicencias();
 	FileWriter fichero = new FileWriter("data/licencias.txt");
 	fichero.write(texto);
@@ -293,7 +293,7 @@ private String generarTextoClientes(){
 	}
 	return texto;
 }
-private void actualizarArchivoClientes() throws IOException {
+public void actualizarArchivoClientes() throws IOException {
 	String texto=generarTextoClientes();
 	FileWriter fichero = new FileWriter("data/clientes.txt");
 	fichero.write(texto);
@@ -403,7 +403,7 @@ private String generarTextoReservas(){
 	}
 	return texto;
 }
-private void actualizarArchivoReservas() throws IOException {
+public void actualizarArchivoReservas() throws IOException {
 	String texto=generarTextoReservas();
 	FileWriter fichero = new FileWriter("data/reservas.txt");
 	fichero.write(texto);
