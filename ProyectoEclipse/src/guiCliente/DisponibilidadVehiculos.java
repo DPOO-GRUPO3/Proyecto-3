@@ -111,14 +111,14 @@ public class DisponibilidadVehiculos {
 	    panel.add(salir);
 	    
 	    lista=new JComboBox<>();
-	    lista.setBounds(10, 340, 490, 25);
+	    lista.setBounds(10, 340, 450, 25);
 	    panel.add(lista);
 	    frame.setVisible(true);
 	}
 
 	protected static void consultar() {
 		// TODO Auto-generated method stub
-		
+		lista.removeAllItems();
 		String sedeNombre=(String) sede.getSelectedItem();
 		int diaNum = (int) dia.getSelectedItem();
 		int mesNum = (int) mes.getSelectedItem();
