@@ -123,7 +123,9 @@ public Carro descomprimirCarro(String linea,HashMap<String, Sede> mapaSedes,
 	String nombreCede=partes[6];
 	String estado=partes[7];
 	String dispon=partes[8];
-	Carro car =new Carro(placa,marca, modelo,  color,trans);
+	String tipo=partes[9];
+	String porc=partes[10];
+	Carro car =new Carro(placa,marca, modelo,  color,trans,tipo,porc);
 	if(dispon.equals("null")==false) {
 		car.setFechaDisponibleCons(LocalDateTime.parse(dispon));
 	}

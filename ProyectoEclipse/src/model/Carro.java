@@ -24,8 +24,14 @@ public class Carro {
 	// disponible, su valor es null
 	private LocalDateTime fechaDispCons;
 	
+	
+	//// NUEVAS CARACTERÍSTICAS
+	private String tipo;
+	private String porcentajeRiesgoPrima;
+	
 	//Método constructor
-	public Carro(String placa,String marca,String modelo, String color,String tipoTransmision) {
+	public Carro(String placa,String marca,String modelo, String color,
+			String tipoTransmision, String tipo,String por) {
 		this.placa = placa;
 		this.marca=marca;
 		this.modelo=modelo;
@@ -38,6 +44,8 @@ public class Carro {
 		this.fechaDispCons=null;
 		this.usoActual=null;
 		this.estado=null;
+		this.tipo=tipo;
+		this.porcentajeRiesgoPrima=por;
 	}
 	// Métodos getters
 	public String getPlaca() {
@@ -91,6 +99,18 @@ public class Carro {
 	}
 	public void setEstado(String estado) {
 		this.estado=estado;
+	}
+	public String getTipo() {
+		return tipo;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+	public String getPorcentajeRiesgoPrima() {
+		return porcentajeRiesgoPrima;
+	}
+	public void setPorcentajeRiesgoPrima(String porcentajeRiesgoPrima) {
+		this.porcentajeRiesgoPrima = porcentajeRiesgoPrima;
 	}
 	
 	
