@@ -28,6 +28,16 @@ public class ReservaTestIntegracion {
 			datos.getMapaCarros().get("MHIL23").setFechaDisponibleCons(null);
 			datos.getMapaCarros().get("MHIL23").setUsoActual(null);
 			
+			//dejar solo 2 carros en el sistema para que la prueba funcione
+			//bien. Asumimos que no se eliminan carros y aprovechamos la 
+			//persistencia
+			Carro carro1=datos.getMapaCarros().get("MHIL23");
+			Carro carro2=datos.getMapaCarros().get("ABC123");
+			datos.getMapaCarros().clear();
+			datos.getMapaCarros().put("MHIL23", carro1);
+			datos.getMapaCarros().put("ABC123", carro2);
+			
+			
 			//Crear controllerCliente con algún usuario sin tarjeta bloqueada
 			ControllerCliente elCliente= new ControllerCliente();
 			elCliente.setDatos(datos);
