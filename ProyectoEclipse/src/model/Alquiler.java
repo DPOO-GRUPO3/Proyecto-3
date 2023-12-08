@@ -51,6 +51,7 @@ public class Alquiler {
 		this.carro = carro;
 		this.fechaInicio=fechaInicio;
 		this.seguros = new ArrayList<Seguro>();
+		this.reserva = null;
 		
 		
 	}

@@ -2,14 +2,14 @@ package model;
 
 import java.io.IOException;
 
-public class Tarjeta {
+public abstract class Pago {
 private String numero;
 private String codigo;
 private boolean bloqueada;
 private Cliente cliente;
 
 
-public Tarjeta(String numero,String codigo) {
+public Pago(String numero,String codigo) {
 	this.bloqueada=false;
 	this.codigo=codigo;
 	this.numero=numero;
@@ -38,7 +38,9 @@ public void setCliente (Cliente cliente)
 	this.cliente=cliente; 
 }
 
+//Metódos abstractos para cargar datos
 
+public abstract void CargarDatos() throws IOException;
 
 
 }

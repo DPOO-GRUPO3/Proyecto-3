@@ -197,5 +197,7 @@ public class VentanaEmpleado extends JFrame implements ActionListener{
 	{
 		return VentanaEmpleado.elEmpleado;
 	}
+	
+	
 
 }

@@ -14,6 +14,8 @@ public class Factura {
 	
 	private double total;
 	
+	private double descuento;
+	
 	private Cliente cliente;
 	
 	private Alquiler alquiler;
@@ -65,6 +67,11 @@ public class Factura {
 		return this.precioLicencias;
 	}
 	
+	public double getDescuento()
+	{
+		return this.descuento;
+	}
+	
 	//setters
 	
 	public void setPagoAnticipado()
@@ -110,8 +117,22 @@ public class Factura {
 			
 		} 
 		
-		this.total= precioTarifa + precioExcedente + precioSeguro + this.precioLicencias;
+		double porcentajeRiesgoPrima= Double.parseDouble( alquiler.getCarro().getPorcentajeRiesgoPrima());
 		
+		double precioRiesgoPrima = porcentajeRiesgoPrima * precioSeguro;
+		
+		if (alquiler.getReserva()!= null )
+		{
+			this.descuento = 0.1;
+		}
+			
+		
+		this.total= precioTarifa + precioExcedente + precioSeguro + this.precioLicencias + precioRiesgoPrima;
+		
+		descuento = descuento*this.total;
+		
+		this.total = total - descuento;
+				
 		
 	}
 
