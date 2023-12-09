@@ -86,9 +86,7 @@ public double crearReserva(String nombreCategoria, String sedeRec,
 		Sede sede1=datos.getMapaSedes().get(sedeRec);
 		Sede sede2=datos.getMapaSedes().get(sedeFin);
 		System.out.println("Reservas "+Reserva.numeroReservas);
-		
 		reserva=new Reserva(cliente, fechaPed1, fechaPed2,
-				
 				categoria, carro, sede1, sede2,"0");
 		//Pongo reserva en mapa reservas
 		System.out.println("Reservas "+Reserva.numeroReservas);
@@ -108,10 +106,8 @@ public double crearReserva(String nombreCategoria, String sedeRec,
 		//calcular diferencia en días
 		long diffDays=ChronoUnit.DAYS.between(fechaPed1, fechaPed2);
 		double difDias =(double) diffDays;
-		return difDias*(tarifaTemp+tarifaCateg)*0.3;
-		
-	}
-	}
+		return difDias*(tarifaTemp+tarifaCateg)*0.3;	
+	}}
 	return 0;
 }
 	
