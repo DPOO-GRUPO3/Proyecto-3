@@ -218,7 +218,7 @@ private static void crearYvalidarUsuario(BaseDatos datos) throws IOException {
 	//Prueba para ver si ya existe ese usuario
 	Cliente clienteExistente=datos.getMapaClientes().get(user);
 	if (clienteExistente!=null) {
-		errorSignIn.setText("Usuario en usu, pruebe con otro");
+		errorSignIn.setText("Usuario en uso, pruebe con otro");
 		errorSignIn.setForeground(Color.RED);
 		frame.revalidate();
 	}
