@@ -11,10 +11,11 @@ private Carro carroReservado;
 private Sede sedeInicio;
 private Sede sedeFin;
 private  int numeroReserva;
+private String appCliente;
 public static int numeroReservas;
 
 public Reserva(Cliente cliente,LocalDateTime fechaYHoraInicio,LocalDateTime fechaYHoraFin,
-		Categoria categoria,Carro carroReservado,Sede sedeInicio,Sede sedeFin
+		Categoria categoria,Carro carroReservado,Sede sedeInicio,Sede sedeFin,String c
 		) {
 	numeroReservas++;
 	this.numeroReserva=numeroReservas+1;
@@ -25,6 +26,8 @@ public Reserva(Cliente cliente,LocalDateTime fechaYHoraInicio,LocalDateTime fech
 	this.carroReservado=carroReservado;
 	this.sedeInicio=sedeInicio;
 	this.sedeFin=sedeFin;
+	this.appCliente=c;
+	
 	System.out.println(numeroReserva);
 }
 public void setNumReserva(int num) {
@@ -56,5 +59,14 @@ public Carro getCarroReservado() {
 }
 public Cliente getCliente() {
 	return cliente;
+}
+public String getAppCliente() {
+	return appCliente;
+}
+public void setAppCliente(String appCliente) {
+	this.appCliente = appCliente;
+}
+public static void setNumeroReservas(int numeroReservas) {
+	Reserva.numeroReservas = numeroReservas;
 }
 }

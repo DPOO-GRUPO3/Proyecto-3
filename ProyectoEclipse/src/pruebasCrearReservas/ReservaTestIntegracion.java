@@ -47,6 +47,7 @@ public class ReservaTestIntegracion {
 			Cliente sel=userList.get(1);
 			sel.getTarjeta().desbloquear();
 			elCliente.setCliente(sel);
+			Reserva.setNumeroReservas(0);
 			
 			//Creamos reserva de carro lujoso (del que solo hay uno)
 			

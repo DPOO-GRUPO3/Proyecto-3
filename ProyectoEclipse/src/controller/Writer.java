@@ -150,8 +150,9 @@ public class Writer {
 		String fin = String.valueOf(reserva.getFechaYHoraFin());
 		String inicio = String.valueOf(reserva.getFechaYHoraInicio());
 		String UsuarioCliente = reserva.getCliente().getUsuario();
+		String c=reserva.getAppCliente();
 		return idReserva + ";" + sedeFin + ";" + sedeInicio + ";" + placa + ";" + categoria + ";" + fin + ";" + inicio
-				+ ";" + UsuarioCliente;
+				+ ";" + UsuarioCliente+ ";" +c;
 	}
 
 //DECIMO OBJETO: EMPLEADO

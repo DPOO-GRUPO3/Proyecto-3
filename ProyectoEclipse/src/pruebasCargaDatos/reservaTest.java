@@ -47,6 +47,7 @@ public class reservaTest {
     	BaseDatos datos =new BaseDatos();
     	datos.descargarTodoslosDatos();
     	datos.getMapaReservas().clear();
+    	Reserva.setNumeroReservas(0);
     	
 		List<Cliente> userList = 
 				new ArrayList<Cliente>(datos.getMapaClientes().values());
@@ -60,14 +61,14 @@ public class reservaTest {
     			datos.getMapaCateg().get("familiares"),
     			datos.getMapaCarros().get("ABC123"),
     			datos.getMapaSedes().get("sur"),
-    			datos.getMapaSedes().get("sur"));
+    			datos.getMapaSedes().get("sur"),"0");
     	
     	Reserva res2=new Reserva(cli2,LocalDateTime.parse("2024-03-01T00:00"),
     			LocalDateTime.parse("2024-03-10T00:00"),
     			datos.getMapaCateg().get("familiares"),
     			datos.getMapaCarros().get("ABC123"),
     			datos.getMapaSedes().get("sur"),
-    			datos.getMapaSedes().get("sur"));
+    			datos.getMapaSedes().get("sur"),"0");
     	
     	datos.getMapaReservas().put(cli1.getNombre(), res1);
     	datos.getMapaReservas().put(cli2.getNombre(), res2);
@@ -77,10 +78,10 @@ public class reservaTest {
     	datos.actualizarArchivoReservas();
     	
     	//Assert
-    	String expectedText="3;sur;sur;ABC123;familiares;2024-02-10T00:00"
-    			+ ";2024-02-01T00:00;samisanti2011\n"+
-    			"4;sur;sur;ABC123;familiares;2024-03-10T00:00"
-    			+ ";2024-03-01T00:00;daniela\n";
+    	String expectedText="2;sur;sur;ABC123;familiares;2024-02-10T00:00"
+    			+ ";2024-02-01T00:00;samisanti2011;0\n"+
+    			"3;sur;sur;ABC123;familiares;2024-03-10T00:00"
+    			+ ";2024-03-01T00:00;daniela;0\n";
     	String fileContent=readFile(TEST_FILE_PATH);
     	assertEquals(expectedText, fileContent);
     }
