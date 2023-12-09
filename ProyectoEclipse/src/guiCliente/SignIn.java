@@ -223,12 +223,12 @@ private static void crearYvalidarUsuario(BaseDatos datos) throws IOException {
 		frame.revalidate();
 	}
 	// Prueba de que totod los campos estén llenos
-	else if(nombreUsuario.getText().equals("")||contrasena.getText()==""
-			||nombre.getText()==""||email.getText()==""||
-			nacionalidad.getText()==""||rutaImagen.getText()==""
-			||numero.getText()==""||pais.getText()==""
-			||fechaVens.getText()==""||rutaImagenLicencia.getText()==""
-			||numeroTarjeta.getText()==""||codigo.getText()=="") 
+	else if(nombreUsuario.getText().isEmpty()||contrasena.getText().isEmpty()
+			||nombre.getText().isEmpty()||email.getText().isEmpty()||
+			nacionalidad.getText().isEmpty()||rutaImagen.getText().isEmpty()
+			||numero.getText().isEmpty()||pais.getText().isEmpty()
+			||fechaVens.getText().isEmpty()||rutaImagenLicencia.getText().isEmpty()
+			||numeroTarjeta.getText().isEmpty()||codigo.getText().isEmpty()) 
 	{
 		errorSignIn.setText("Debe llenar todos los campos");
 		errorSignIn.setForeground(Color.RED);
