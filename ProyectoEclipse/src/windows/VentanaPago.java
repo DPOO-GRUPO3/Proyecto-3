@@ -27,6 +27,7 @@ import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.font.PDType0Font;
 import org.apache.pdfbox.pdmodel.font.PDType1Font;
 import org.apache.pdfbox.pdmodel.font.Standard14Fonts;
+import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 
 import model.Pago;
 import view.Aplicacion;
@@ -37,11 +38,13 @@ public class VentanaPago extends JFrame implements ActionListener{
 	private JTextField numero2;
 	private JTextField codigo2;
 	private ArrayList<String> datos;
+	private static int contador;
 	
 	
 	public VentanaPago(ArrayList<String> datos)
 	{
 		this.datos = datos;
+		this.contador += 1;
 		
 		setTitle("Facturacion");
 		setSize(500, 500);
@@ -145,9 +148,7 @@ public class VentanaPago extends JFrame implements ActionListener{
 				pago.CargarDatos();
 				JOptionPane.showMessageDialog(null, "Su pago ha sido aprobado");
 				
-				//Crear Factura PDF
-				
-				 // Crear un nuevo documento PDF
+				// Crear un nuevo documento PDF
 	            PDDocument document = new PDDocument();
 
 	            // Añadir una nueva página al documento
@@ -155,22 +156,57 @@ public class VentanaPago extends JFrame implements ActionListener{
 	            document.addPage(page);
 	            
 	            PDPageContentStream contentStream = new PDPageContentStream(document, page);
-	            //PDType0Font font = PDType0Font.load(document, VentanaPago.class.getResourceAsStream("letra.ttf"));
-                //contentStream.setFont(font, 12);
+	   
 	            
 	            contentStream.setFont(new PDType1Font(Standard14Fonts.FontName.HELVETICA), 14);
                 
 	            contentStream.beginText();
 	            contentStream.newLineAtOffset(50, 700); // Posición del texto en la página
-	            contentStream.showText("Hola, este es un documento PDF creado con Apache PDFBox.");
+	          
+	            
+	            //Palabra pdf
+	            ArrayList<String> archivo = new ArrayList<String>();
+	            archivo.add("idFactura: " + datos.get(0));
+	            archivo.add("Pago Anticipado: " + datos.get(1));
+	            archivo.add("Precio Licencias: " + datos.get(2));
+	            archivo.add("Total: " + datos.get(3));
+	            archivo.add("Descuento: " + datos.get(4));
+	            
+	            for (String dato : archivo) {
+	            	
+	                contentStream.showText(dato);
+	                contentStream.newLineAtOffset(0, -20); // Ajusta el valor según sea necesario para el espaciado
+	            }
+	            
 	            contentStream.endText();
+
+	            
+	            float xTextoFinal = 50;
+	            float yTextoFinal = 600;
+	           
+	            // Cargar la imagen desde un archivo (ajusta la ruta según tu caso)
+	            String rutaImagen = "facturas/firma.jpg";
+	            PDImageXObject imagen = PDImageXObject.createFromFile(rutaImagen, document);
+
+	            // Obtener las dimensiones de la imagen
+	            float anchoImagen = 200;
+	            float altoImagen = 200;
+
+	            // Agregar la imagen al contenido de la página
+	            float xImagen = 50; // Ajusta la posición x de la imagen
+	            float yImagen = yTextoFinal - altoImagen - 10; // Ajusta la posición y de la imagen
+	            
+
+	            contentStream.drawImage(imagen, xImagen, yImagen, anchoImagen, altoImagen);
+	            
 	            contentStream.close();
 
 	            // Guardar el documento en un archivo
-	            document.save("data/mi_documento.pdf");
+	            document.save("facturas/factura" + this.contador +".pdf");
 
 	            // Cerrar el documento
 	            document.close();
+
 				
 				
 				new VentanaEmpleado();
@@ -191,12 +227,5 @@ public class VentanaPago extends JFrame implements ActionListener{
 		
 	}
 	
-	public static void main(String[] args) {
-	
-		ArrayList<String> prueba = new ArrayList<String>();
-		new VentanaPago(prueba);
-    }
-	
-
 
 }

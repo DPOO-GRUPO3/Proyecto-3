@@ -86,7 +86,7 @@ public class VentanaFactura extends JFrame implements ActionListener {
 		
 		//total
 		
-		JLabel descuento1= new JLabel ("Total:");
+		JLabel descuento1= new JLabel ("Descuento:");
 		JLabel descuento2 = new JLabel (datos.get(3));
 						
 		gbc.gridx = 0;
@@ -113,6 +113,8 @@ public class VentanaFactura extends JFrame implements ActionListener {
 		if (comando.equals("PAGAR")){
 			
 			new VentanaPago(datos);
+			
+			dispose();
 			
 			
 			}

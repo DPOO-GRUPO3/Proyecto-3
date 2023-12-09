@@ -387,7 +387,7 @@ public ArrayList<String> getFactura()
 	datos.add(precioLicencias);
 	String total = String.valueOf(alquiler.getFactura().getTotal());
 	datos.add(total);
-	String descuento = String.valueOf(alquiler.getFactura().getDescuento())+ "\n";
+	String descuento = String.valueOf(alquiler.getFactura().getDescuento());
 	datos.add(descuento);
 	return datos;
 }
