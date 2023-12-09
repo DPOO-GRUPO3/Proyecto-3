@@ -225,8 +225,9 @@ public class Reservar {
 		String timeFin=fechaFin.toString();
 		String timeRecoger= fechaInicio.toString();
 		double cobro=CostumerLogIn.getElCliente().crearReserva(nombreCat, sedeRec, timeRecoger, sedeFin2, timeFin);
-		cobro=CostumerLogIn.getElCliente().descuento(cobro);
+		
 		if(cobro!=0) {
+			cobro=CostumerLogIn.getElCliente().descuento(cobro);
 		System.out.println("Su reserva está lista, se le cobró el 30% correspondiente a"
 				+cobro );
 		error.setText("Su reserva está lista, se le cobró el 30% correspondiente a"

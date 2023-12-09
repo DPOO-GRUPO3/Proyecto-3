@@ -1,3 +1,4 @@
 samisanti2011;Hola;@;colombia;Samuel Peña;wwww;23;48
 daniela;1234;daniela;colombia;Daniela Echavarria;www;1;1
 Josue;Monitor123;josue@uniandes;colombia;Josué DPOO;wwww;98;789
+MarioBros;Dpoo21;@uniandes;maymar;Mario Sanchez;http.mario;6767;8000

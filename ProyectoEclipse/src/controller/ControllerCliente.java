@@ -26,7 +26,7 @@ private Reserva reserva;
 public ControllerCliente() {
 	this.cliente=null;
 	this.datos=null;
-	
+	this.reserva=null;
 }
 //Get
 public Cliente getCliente() {
