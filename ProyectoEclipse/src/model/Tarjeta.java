@@ -1,9 +1,12 @@
 package model;
 
+import java.io.IOException;
+
 public class Tarjeta {
 private String numero;
 private String codigo;
 private boolean bloqueada;
+private Cliente cliente;
 
 
 public Tarjeta(String numero,String codigo) {
@@ -25,8 +28,17 @@ public String getNumero() {
 	return numero;
 }
 
-
 public boolean getBloqueo() {
 	return bloqueada;
 }
+
+// setters
+public void setCliente (Cliente cliente)
+{
+	this.cliente=cliente; 
+}
+
+
+
+
 }

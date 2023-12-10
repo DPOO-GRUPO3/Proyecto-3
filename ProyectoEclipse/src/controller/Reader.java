@@ -153,6 +153,7 @@ public Reserva descomprimirReserva(String linea,HashMap<String, Sede> mapaSedes,
 	String fechaF=partes[5];
 	String fechaIn=partes[6];
 	String usCliente=partes[7];
+	String c=partes[8];
 	
 	Sede sFin=mapaSedes.get(sedeFin);
 	Sede sIn=mapaSedes.get(sedeInicio);
@@ -162,7 +163,8 @@ public Reserva descomprimirReserva(String linea,HashMap<String, Sede> mapaSedes,
 	LocalDateTime in=LocalDateTime.parse(fechaIn);
 	LocalDateTime fin=LocalDateTime.parse(fechaF);
 	
-	Reserva r =new Reserva(cliente, in, fin, cat, carro, sIn, sFin);
+	Reserva r =new Reserva(cliente, in, fin, cat, carro, sIn, sFin,c);
+	
 	//Añadir reserva a carro
 	
 	carro.agregarReserva(r);

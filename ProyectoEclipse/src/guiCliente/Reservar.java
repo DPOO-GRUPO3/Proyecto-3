@@ -193,7 +193,7 @@ public class Reservar {
 	    
 	    // error
 	    error= new JLabel("");
-	    error.setBounds(10, 240, 400, 25);
+	    error.setBounds(5, 240, 490, 25);
 	    panel.add(error);
 	    
 	    
@@ -225,10 +225,12 @@ public class Reservar {
 		String timeFin=fechaFin.toString();
 		String timeRecoger= fechaInicio.toString();
 		double cobro=CostumerLogIn.getElCliente().crearReserva(nombreCat, sedeRec, timeRecoger, sedeFin2, timeFin);
+		
 		if(cobro!=0) {
+			cobro=CostumerLogIn.getElCliente().descuento(cobro);
 		System.out.println("Su reserva está lista, se le cobró el 30% correspondiente a"
 				+cobro );
-		error.setText("Su reserva está lista, se le cobró el 30% correspondiente a"
+		error.setText("Su reserva está lista, se le cobró el 30% con descuento correspondiente a "
 				+cobro);
 		error.setForeground(Color.GREEN);
 		frame.revalidate();
@@ -236,7 +238,7 @@ public class Reservar {
 		
 		else{
 			System.out.println("No hay carros disponibles, intente cambiar la categoría o las fechas");
-			error.setText("No hay carros disponibles, intente cambiar la categoría o las fechas");
+			error.setText("Error creando reserva");
 			error.setForeground(Color.RED);
 			frame.revalidate();
 		}

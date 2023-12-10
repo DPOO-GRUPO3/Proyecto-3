@@ -17,14 +17,16 @@ import model.Temporada;
 
 public class ControllerCliente {
 private Cliente cliente;
-private BaseDatos datos; // debe haber unos datos asociados para trabajar
+private BaseDatos datos;
+private Reserva reserva;
+// debe haber unos datos asociados para trabajar
 
 // Métodos
 //contructoir
 public ControllerCliente() {
 	this.cliente=null;
 	this.datos=null;
-	
+	this.reserva=null;
 }
 //Get
 public Cliente getCliente() {
@@ -84,10 +86,8 @@ public double crearReserva(String nombreCategoria, String sedeRec,
 		Sede sede1=datos.getMapaSedes().get(sedeRec);
 		Sede sede2=datos.getMapaSedes().get(sedeFin);
 		System.out.println("Reservas "+Reserva.numeroReservas);
-		
-		Reserva reserva=new Reserva(cliente, fechaPed1, fechaPed2,
-				
-				categoria, carro, sede1, sede2);
+		reserva=new Reserva(cliente, fechaPed1, fechaPed2,
+				categoria, carro, sede1, sede2,"0");
 		//Pongo reserva en mapa reservas
 		System.out.println("Reservas "+Reserva.numeroReservas);
 		String idReserva =String.valueOf(reserva.getNumReserva());
@@ -106,14 +106,18 @@ public double crearReserva(String nombreCategoria, String sedeRec,
 		//calcular diferencia en días
 		long diffDays=ChronoUnit.DAYS.between(fechaPed1, fechaPed2);
 		double difDias =(double) diffDays;
-		return difDias*(tarifaTemp+tarifaCateg)*0.3;
-		
-	}
-	}
+		return difDias*(tarifaTemp+tarifaCateg)*0.3;	
+	}}
 	return 0;
 }
 	
-	
+public double descuento(double vNeto) {
+	reserva.setAppCliente("1");
+	return vNeto*0.9;
+}
+
+
+
 private Temporada encontrarTemporada(LocalDateTime fecha) {
 	for(Temporada temp:datos.getMapaTemporadas().values()) {
 		LocalDateTime in=temp.getInicioTemporada();
@@ -212,5 +216,11 @@ public Sede sedeEnLaQueEstaraUnCarrodadaFecha(Carro carro,LocalDateTime fecha) {
 }
 public void setCliente(Cliente cliente) {
 	this.cliente = cliente;
+}
+public Reserva getReserva() {
+	return reserva;
+}
+public void setReserva(Reserva reserva) {
+	this.reserva = reserva;
 }
 }

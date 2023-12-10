@@ -114,6 +114,7 @@ public class ControllerEmpleado {
 			
 			if (disponible && sede.equals(carro.getSede()))
 			{
+				
 				return carro;
 			}	
 		}
@@ -331,6 +332,7 @@ public class ControllerEmpleado {
 			String id = "Id: "+ factura.getId() + "\n";
 			String pagoAnticipado = "Pago Anticipado: "+ String.valueOf(factura.getPagoAnticipado())+ "\n";
 			String total = "Total: " + String.valueOf(factura.getTotal())+ "\n";
+			String descuento = "Descuento: " + String.valueOf(factura.getDescuento())+ "\n";
 			String cliente = "Cliente: " +  factura.getCliente().getNombre() + "\n";
 			String alquiler = "Id alquiler: " + factura.getAlquiler().getAlquileresId() + "\n";
 			String licencias = "Licencias ";
@@ -339,7 +341,7 @@ public class ControllerEmpleado {
 				licencias += licencia.getNumero() + "  ";
 			}
 			
-			System.out.println(id+pagoAnticipado+total+cliente+alquiler+ licencias + "\n");
+			System.out.println(id+pagoAnticipado+total+ descuento+cliente+alquiler+ licencias + "\n");
 		}
 
 // Crear Licencias
@@ -385,7 +387,8 @@ public ArrayList<String> getFactura()
 	datos.add(precioLicencias);
 	String total = String.valueOf(alquiler.getFactura().getTotal());
 	datos.add(total);
-	
+	String descuento = String.valueOf(alquiler.getFactura().getDescuento());
+	datos.add(descuento);
 	return datos;
 }
 

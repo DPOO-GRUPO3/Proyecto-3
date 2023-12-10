@@ -47,6 +47,7 @@ public class ReservaTestIntegracion {
 			Cliente sel=userList.get(1);
 			sel.getTarjeta().desbloquear();
 			elCliente.setCliente(sel);
+			Reserva.setNumeroReservas(0);
 			
 			//Creamos reserva de carro lujoso (del que solo hay uno)
 			
@@ -58,7 +59,7 @@ public class ReservaTestIntegracion {
 			
 			//Tratamos de crear reserva y vemos que no se crea, el cobro es 0, la tarjeta
 			// está bloqueada y el size del mapa reservas debe ser 1.
-			double cobro1=elCliente.crearReserva("todoterreno", "sur", "2024-01-01T00:00",
+			double cobro1=elCliente.crearReserva("familiares", "sur", "2024-01-01T00:00",
 					"sur", "2024-02-01T00:00");
 			assertEquals(0,cobro1);
 			assertEquals(true,elCliente.getCliente().getTarjeta().getBloqueo());
@@ -130,6 +131,13 @@ public class ReservaTestIntegracion {
 			double cobro9=elCliente.crearReserva("lujoso", "sur", "2024-02-10T00:00",
 					"sur", "2024-02-18T00:00");
 			assertEquals(cobro9,27600);
+			
+			//se hacemos descuento el valor a pagar será el 90%
+			// y la variable asociada a si se uso la app cliente será 1
+			double cobro10=elCliente.descuento(cobro9);
+			assertEquals(cobro10,24840);
+			assertEquals(elCliente.getReserva().getAppCliente(),"1");
+			
 			
 	}
 }

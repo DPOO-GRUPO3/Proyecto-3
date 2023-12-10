@@ -54,7 +54,6 @@ public class licenciaTest {
     	String fileContent=readFile(TEST_FILE_PATH);
     	assertEquals(expectedText, fileContent);
     }
-
     private static void copyFile(String sourcePath, String destinationPath) throws IOException {
         File source = new File(sourcePath);
         File destination = new File(destinationPath);
@@ -69,7 +68,6 @@ public class licenciaTest {
             }
         }
     }
-
 
     private String readFile(String filePath) throws IOException {
         StringBuilder content = new StringBuilder();

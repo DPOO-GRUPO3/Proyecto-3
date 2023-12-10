@@ -3,16 +3,19 @@ package windows;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 import javax.swing.ButtonGroup;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 
-public class VentanaFactura extends JFrame {
+public class VentanaFactura extends JFrame implements ActionListener {
 	
 	private ArrayList<String> datos;
 	
@@ -81,10 +84,41 @@ public class VentanaFactura extends JFrame {
 		gbc.gridx = 1;
 		panel.add(total2, gbc);
 		
+		//total
+		
+		JLabel descuento1= new JLabel ("Descuento:");
+		JLabel descuento2 = new JLabel (datos.get(3));
+						
+		gbc.gridx = 0;
+		gbc.gridy = 5;
+		panel.add(descuento1,gbc);
+		gbc.gridx = 1;
+		panel.add(descuento2, gbc);
+		
+		JButton pago = new JButton("Pagar");
+		pago.setActionCommand("PAGAR");
+		pago.addActionListener(this);
+		panel.add(pago);
+		
 		add(panel);
 		setVisible(true);
 		
 	
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		String comando = e.getActionCommand();
+		
+		if (comando.equals("PAGAR")){
+			
+			new VentanaPago(datos);
+			
+			dispose();
+			
+			
+			}
+		
 	}
 
 }
