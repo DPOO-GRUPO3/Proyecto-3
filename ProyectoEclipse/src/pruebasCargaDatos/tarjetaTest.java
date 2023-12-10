@@ -14,7 +14,7 @@ import java.io.*;
 
 public class tarjetaTest {
     private static final String TEST_FILE_PATH = "data/tarjetas.txt";
-    private static final String BACKUP_FILE_PATH = "backup/tarjetas.txt";
+    private static final String BACKUP_FILE_PATH = "data/backuptarjetas.txt";
 
     @BeforeAll
     public static void setup() throws IOException {
