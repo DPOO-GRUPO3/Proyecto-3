@@ -17,11 +17,11 @@ import org.junit.jupiter.api.Test;
 
 import controller.BaseDatos;
 import model.Licencia;
-import model.Tarjeta;
+
 
 public class licenciaTest {
     private static final String TEST_FILE_PATH = "data/licencias.txt";
-    private static final String BACKUP_FILE_PATH = "backup/back.txt";
+    private static final String BACKUP_FILE_PATH = "data/backL.txt";
 
     @BeforeAll
     public static void setup() throws IOException {

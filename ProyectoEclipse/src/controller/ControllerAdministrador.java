@@ -1,6 +1,10 @@
 package controller;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+
+import org.junit.jupiter.api.BeforeAll;
 
 import model.Administrador;
 import model.Carro;
@@ -13,12 +17,50 @@ import windows.VentanaPrincipal;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 
 import windows.VentanaSeleccionSede;
 
 public class ControllerAdministrador {
+	
+    private static final String TEST_FILE_PATH = "data/clientes.txt";
+    private static final String BACKUP_FILE_PATH = "data/backc.txt";
+
+    @BeforeAll
+    public static void setup() throws IOException {
+        // Hacer una copia del archivo original antes de la prueba
+        copyFile(TEST_FILE_PATH, BACKUP_FILE_PATH);
+    }
+    
+    private static void copyFile(String sourcePath, String destinationPath) throws IOException {
+        File source = new File(sourcePath);
+        File destination = new File(destinationPath);
+
+        // Copiar el archivo
+        try (InputStream in = new FileInputStream(source);
+             OutputStream out = new FileOutputStream(destination)) {
+            byte[] buffer = new byte[1024];
+            int length;
+            while ((length = in.read(buffer)) > 0) {
+                out.write(buffer, 0, length);
+            }
+        }
+    }
+
+
+    private String readFile(String filePath) throws IOException {
+        StringBuilder content = new StringBuilder();
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                content.append(line).append("\n");
+            }
+        }
+        return content.toString();
+    }
 	
 	private Administrador administrador;
 	private BaseDatos datos;
@@ -27,11 +69,9 @@ public class ControllerAdministrador {
 	public ControllerAdministrador() {
 		this.administrador=null;
 		this.datos=null;
-		
 	}
 	
 	public Administrador getAdministrador() {
-		
 		return this.administrador;
 	}
 	
@@ -46,7 +86,7 @@ public class ControllerAdministrador {
 
 		Administrador administrador = datos.getMapaAdministradores().get(usuario);
 		
-		if(administrador.getUsuario().equals(usuario)&& administrador.getContrasena().equals(contrasena)) {
+		if(administrador != null && administrador.getUsuario().equals(usuario) && administrador.getContrasena().equals(contrasena)) {
 			this.administrador=administrador;
 			
 		}

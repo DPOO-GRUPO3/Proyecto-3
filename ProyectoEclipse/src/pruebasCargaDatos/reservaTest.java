@@ -26,7 +26,7 @@ import model.Tarjeta;
 
 public class reservaTest {
     private static final String TEST_FILE_PATH = "data/reservas.txt";
-    private static final String BACKUP_FILE_PATH = "backup/backr.txt";
+    private static final String BACKUP_FILE_PATH = "data/backr.txt";
 
     @BeforeAll
     public static void setup() throws IOException {
