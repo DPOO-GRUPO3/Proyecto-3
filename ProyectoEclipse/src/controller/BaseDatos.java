@@ -493,7 +493,7 @@ private String generarTextoAdministradores(){
 }
 
 
-private void actualizarArchivoAdministradores() throws IOException {
+public void actualizarArchivoAdministradores() throws IOException {
 	String texto=generarTextoAdministradores();
 	FileWriter fichero = new FileWriter("data/administradores.txt");
 	fichero.write(texto);
