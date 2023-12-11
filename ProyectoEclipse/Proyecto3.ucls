@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="controller.BaseDatos" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/controller/BaseDatos.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="188" width="367" x="698" y="928"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="controller.ControllerAdministrador" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/controller/ControllerAdministrador.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1422" y="598"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="controller.ControllerCliente" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/controller/ControllerCliente.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2958" y="824"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="controller.ControllerEmpleado" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/controller/ControllerEmpleado.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1215" y="2390"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="controller.Reader" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/controller/Reader.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="403" y="1127"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="controller.Writer" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/controller/Writer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="637" y="711"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="guiCliente.CostumerLogIn" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/guiCliente/CostumerLogIn.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3385" y="816"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="guiCliente.DisponibilidadVehiculos" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/guiCliente/DisponibilidadVehiculos.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2085" y="118"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="guiCliente.MainWindow" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/guiCliente/MainWindow.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1020" y="663"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="guiCliente.OpcionesDos" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/guiCliente/OpcionesDos.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1643" y="65"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="guiCliente.Reservar" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/guiCliente/Reservar.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2326" y="190"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="guiCliente.SignIn" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/guiCliente/SignIn.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2604" y="180"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="pruebasCargaDatos.AdministradorTest" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/pruebasCargaDatos/AdministradorTest.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1848" y="79"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="pruebasCargaDatos.AlquilerTest" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/pruebasCargaDatos/AlquilerTest.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1848" y="210"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="pruebasCargaDatos.carroTest" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/pruebasCargaDatos/carroTest.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1870" y="365"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="model.Administrador" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/model/Administrador.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="360" x="2917" y="265"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="model.Carro" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/model/Carro.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="286" width="288" x="479" y="1475"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="model.Categoria" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/model/Categoria.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="228" y="1748"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="model.Cliente" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/model/Cliente.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="235" width="284" x="2418" y="988"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="model.Empleado" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/model/Empleado.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="346" width="251" x="3406" y="2415"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="model.Factura" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/model/Factura.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="191" width="104" x="2503" y="568"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="model.Licencia" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/model/Licencia.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="176" width="168" x="1406" y="1561"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <interface id="23" language="java" name="model.Usuario" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/model/Usuario.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4259" y="1504"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </interface>  
+  <class id="24" language="java" name="model.Temporada" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/model/Temporada.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="690" y="2758"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="model.Tarjeta" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/model/Tarjeta.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1882" y="3021"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="model.Tarifa" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/model/Tarifa.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-77" y="1697"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="model.Sire" project="ProyectoEclipse" file="/ProyectoEclipse/src/model/Sire.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="5126" y="2639"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="model.Seguro" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/model/Seguro.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3146" y="2786"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="29" language="java" name="model.Sede" project="ProyectoEclipse" file="/ProyectoEclipse/src/model/Sede.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="253" width="345" x="4618" y="748"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="30" language="java" name="model.Reserva" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/model/Reserva.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="305" width="574" x="4078" y="2159"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" name="model.PayU" project="ProyectoEclipse" file="/ProyectoEclipse/src/model/PayU.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="65" width="104" x="5468" y="1834"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" name="model.PayPal" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/model/PayPal.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="83" width="108" x="5459" y="2312"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" name="model.Pago" project="ProyectoEclipse" file="/ProyectoEclipse/src/model/Pago.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="5113" y="2132"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <package id="34" language="java" name="pruebasCrearReservas" project="ProyectoEclipse" 
+    file="/ProyectoEclipse/src/pruebasCrearReservas" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2836" y="72"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <association id="35">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="36" name="mapaSedes"/>      
+      <multiplicity id="37" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="38">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="39" name="carros"/>      
+      <multiplicity id="40" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="41">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="42" name="categoria"/>      
+      <multiplicity id="43" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="44">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="45" name="reserva"/>      
+      <multiplicity id="46" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="47">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="48" name="mapaCategorias"/>      
+      <multiplicity id="49" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="50">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="51" name="reader"/>      
+      <multiplicity id="52" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="53">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="54" name="mapaCarros"/>      
+      <multiplicity id="55" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="56">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="57" name="mapaCarros"/>      
+      <multiplicity id="58" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="59">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="60" name="datos"/>      
+      <multiplicity id="61" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="62">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="63" name="mapaTemporadas"/>      
+      <multiplicity id="64" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="65">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="66" name="reservas"/>      
+      <multiplicity id="67" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="68">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="69" name="datos"/>      
+      <multiplicity id="70" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="71">    
+    <end type="SOURCE" refId="30" navigable="false">      
+      <attribute id="72" name="carroReservado"/>      
+      <multiplicity id="73" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="74">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="33"/>  
+  </generalization>  
+  <association id="75">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="76" name="mapaTarjetas"/>      
+      <multiplicity id="77" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="78">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="33"/>  
+  </generalization>  
+  <association id="79">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="80" name="datos"/>      
+      <multiplicity id="81" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="82">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="83" name="datos"/>      
+      <multiplicity id="84" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="85">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="86" name="mapaReservas"/>      
+      <multiplicity id="87" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="88">    
+    <end type="SOURCE" refId="30" navigable="false">      
+      <attribute id="89" name="sedeInicio"/>      
+      <multiplicity id="90" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="91">    
+    <end type="SOURCE" refId="33" navigable="false">      
+      <attribute id="92" name="cliente"/>      
+      <multiplicity id="93" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="94">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="95" name="mapaSedes"/>      
+      <multiplicity id="96" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="97">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="23"/>  
+  </realization>  
+  <realization id="98">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="23"/>  
+  </realization>  
+  <association id="99">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="100" name="mapaFacturas"/>      
+      <multiplicity id="101" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="102">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="103" name="mapaSeguros"/>      
+      <multiplicity id="104" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="28" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="105">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="106" name="mapaLicencias"/>      
+      <multiplicity id="107" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="108">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="109" name="mapaClientes"/>      
+      <multiplicity id="110" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="111">    
+    <end type="SOURCE" refId="25" navigable="false">      
+      <attribute id="112" name="cliente"/>      
+      <multiplicity id="113" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="114">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="115" name="mapaEmpleados"/>      
+      <multiplicity id="116" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="117">    
+    <end type="SOURCE" refId="29" navigable="false">      
+      <attribute id="118" name="carros"/>      
+      <multiplicity id="119" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="120">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="121" name="categoria"/>      
+      <multiplicity id="122" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="123">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="124" name="mapaAdministradores"/>      
+      <multiplicity id="125" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="126">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="127" name="mapaFacturas"/>      
+      <multiplicity id="128" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="129">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="130" name="empleado"/>      
+      <multiplicity id="131" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="132">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="133" name="tarifas"/>      
+      <multiplicity id="134" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="135">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="136" name="mapaCategorias"/>      
+      <multiplicity id="137" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="138">    
+    <end type="SOURCE" refId="30" navigable="false">      
+      <attribute id="139" name="cliente"/>      
+      <multiplicity id="140" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="141">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="142" name="mapaClientes"/>      
+      <multiplicity id="143" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="144">    
+    <end type="SOURCE" refId="30" navigable="false">      
+      <attribute id="145" name="sedeFin"/>      
+      <multiplicity id="146" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="147">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="148" name="sede"/>      
+      <multiplicity id="149" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="150">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="151" name="mapaEmpleados"/>      
+      <multiplicity id="152" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="153">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="23"/>  
+  </realization>  
+  <association id="154">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="155" name="mapaTarifasExcedente"/>      
+      <multiplicity id="156" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="157">    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="158" name="sede"/>      
+      <multiplicity id="159" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="160">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="161" name="tarifasExcedente"/>      
+      <multiplicity id="162" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="163">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="164" name="mapaReservas"/>      
+      <multiplicity id="165" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="166">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="167" name="sede"/>      
+      <multiplicity id="168" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="169">    
+    <end type="SOURCE" refId="30" navigable="false">      
+      <attribute id="170" name="categoria"/>      
+      <multiplicity id="171" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="172">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="173" name="licencia"/>      
+      <multiplicity id="174" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="175">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="176" name="categoria"/>      
+      <multiplicity id="177" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="178">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="179" name="tarjeta"/>      
+      <multiplicity id="180" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="181">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="182" name="elCliente"/>      
+      <multiplicity id="183" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="184">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="185" name="mapaTarjetas"/>      
+      <multiplicity id="186" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="187">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="188" name="cliente"/>      
+      <multiplicity id="189" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="190">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="191" name="mapaLicencias"/>      
+      <multiplicity id="192" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="193">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="194" name="administrador"/>      
+      <multiplicity id="195" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="196">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="33"/>  
+  </generalization>  
+  <association id="197">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="198" name="cliente"/>      
+      <multiplicity id="199" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="200">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="201" name="mapaTarifasExcedente"/>      
+      <multiplicity id="202" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="203">    
+    <end type="SOURCE" refId="29" navigable="false">      
+      <attribute id="204" name="usuarios"/>      
+      <multiplicity id="205" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="206">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="207" name="writer"/>      
+      <multiplicity id="208" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="209">    
+    <end type="SOURCE" refId="29" navigable="false">      
+      <attribute id="210" name="administrador"/>      
+      <multiplicity id="211" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="212">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="213" name="mapaTemporadas"/>      
+      <multiplicity id="214" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="215">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="216" name="mapaSeguros"/>      
+      <multiplicity id="217" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="28" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="false" package="false" protected="false" private="false" static="false"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
