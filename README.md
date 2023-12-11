@@ -4,7 +4,7 @@
 
 Revisar documento de diseño dentro de la carpeta Documentos y Diagramas para mayores detalles de como correr la aplicación.
 NOTE QUE PARA GENERAR PERSISTENCIA AL CREAR RESERVA DEBE DARLE LOGOUT DESPUES DE CREARLA.
-
+APP DEL CLIENTE EN PAQUETE GUI CLIENTE
 
 Empleado
 usuario: laura
