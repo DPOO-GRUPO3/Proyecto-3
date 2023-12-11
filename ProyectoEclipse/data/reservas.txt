@@ -1,2 +1,1 @@
 2;norte;norte;MHIL23;lujoso;2024-02-01T00:00;2024-01-01T00:00;samisanti2011;1
-3;norte;norte;NEK123;todoterreno;2024-02-01T00:00;2024-01-01T00:00;daniela;0

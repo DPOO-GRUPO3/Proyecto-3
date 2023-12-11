@@ -38,14 +38,15 @@ public class SedeTest {
         // Copiar el archivo de prueba al archivo de copia de seguridad
         Files.copy(archivoPrueba, archivoBackup);
     }
-
-
-    public static void cleanup() throws IOException {
+    @AfterAll
+    public static void cleanup1() throws IOException {
         // Restaurar el archivo original después de la prueba
         copyFile(BACKUP_FILE_SEDES, TEST_FILE_SEDES);
         // Eliminar el archivo de respaldo
-        Files.deleteIfExists(Paths.get(BACKUP_FILE_SEDES));
+        new File(BACKUP_FILE_SEDES).delete();
     }
+
+
     
     private static void copyFile(String sourcePath, String destinationPath) throws IOException {
         File source = new File(sourcePath);

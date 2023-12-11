@@ -240,8 +240,12 @@ public class ControllerEmpleado {
 				{
 					LocalDateTime inicio= reserva.getFechaYHoraInicio();
 					LocalDateTime fin= reserva.getFechaYHoraFin();
+					boolean i=inicio.isAfter(fechaInicio.minusDays(1))
+							&inicio.isBefore(fechaInicio.plusDays(1));
+					boolean f=fin.isAfter(fechaFin.minusDays(1))
+							&fin.isBefore(fechaFin.plusDays(1));
 					
-					if (fechaInicio.isEqual(inicio) && fechaFin.isEqual(fin) && cliente.equals(reserva.getCliente()))
+					if (i==true&&f==true&& cliente.equals(reserva.getCliente()))
 					{
 						return reserva;
 					}	
