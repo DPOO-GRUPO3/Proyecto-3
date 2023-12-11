@@ -57,7 +57,7 @@
   </class>  
   <class id="7" language="java" name="guiCliente.CostumerLogIn" project="ProyectoEclipse" 
     file="/ProyectoEclipse/src/guiCliente/CostumerLogIn.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="3385" y="816"/>    
+    <position height="-1" width="-1" x="3111" y="638"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -174,7 +174,7 @@
   </class>  
   <class id="20" language="java" name="model.Empleado" project="ProyectoEclipse" 
     file="/ProyectoEclipse/src/model/Empleado.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="346" width="251" x="3406" y="2415"/>    
+    <position height="346" width="251" x="3466" y="2423"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -201,7 +201,7 @@
   </class>  
   <interface id="23" language="java" name="model.Usuario" project="ProyectoEclipse" 
     file="/ProyectoEclipse/src/model/Usuario.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="4259" y="1504"/>    
+    <position height="-1" width="-1" x="4083" y="1478"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -237,7 +237,7 @@
   </class>  
   <class id="27" language="java" name="model.Sire" project="ProyectoEclipse" file="/ProyectoEclipse/src/model/Sire.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="5126" y="2639"/>    
+    <position height="-1" width="-1" x="5096" y="2545"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -255,7 +255,7 @@
   </class>  
   <class id="29" language="java" name="model.Sede" project="ProyectoEclipse" file="/ProyectoEclipse/src/model/Sede.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="253" width="345" x="4618" y="748"/>    
+    <position height="421" width="511" x="4500" y="580"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
