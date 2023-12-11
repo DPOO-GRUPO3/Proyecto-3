@@ -2,4 +2,3 @@
 2;norte;norte;DEF123;2023-01-04T23:59:59;2023-01-02T00:00;daniela;null;10;null
 3;norte;norte;DEF123;2023-01-04T23:59:59;2023-01-03T00:00;daniela;null;10;null
 4;norte;norte;DEF123;2023-01-02T23:59:59;2023-01-01T00:00;daniela;null;29;null
-5;sur;sur;GHI123;2024-02-01T23:59:59;2024-01-01T00:00;MarioBros;null;29;null

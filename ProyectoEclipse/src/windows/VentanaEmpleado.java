@@ -147,7 +147,7 @@ public class VentanaEmpleado extends JFrame implements ActionListener{
 			alquiler = elEmpleado.CrearAlquiler(usuario, sedeDevolucion, sedeRecoger, fechaDeb, fechaInicio, categoria);
 		}
 		else {
-			alquiler =elEmpleado.crearAlquilerReserva(categoria, usuario, fechaInicio, fechaInicio);
+			alquiler =elEmpleado.crearAlquilerReserva(categoria, usuario, fechaInicio, fechaDeb);
 		}
 		
 		if (alquiler != null) {
