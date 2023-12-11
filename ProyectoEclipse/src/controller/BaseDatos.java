@@ -438,7 +438,7 @@ private String generarTextoAlquileres(){
 	}
 	return texto;
 }
-private void actualizarArchivoAlquileres() throws IOException {
+public void actualizarArchivoAlquileres() throws IOException {
 	String texto=generarTextoAlquileres();
 	FileWriter fichero = new FileWriter("data/alquileres.txt");
 	fichero.write(texto);
