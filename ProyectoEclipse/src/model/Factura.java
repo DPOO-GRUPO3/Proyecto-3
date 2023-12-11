@@ -124,7 +124,7 @@ public class Factura {
 		
 		double precioRiesgoPrima = porcentajeRiesgoPrima * precioSeguro;
 		
-		if (alquiler.getReserva()!= null )
+		if (alquiler.getReserva().getAppCliente()!= "0" )
 		{
 			this.descuento = 0.1;
 		}
