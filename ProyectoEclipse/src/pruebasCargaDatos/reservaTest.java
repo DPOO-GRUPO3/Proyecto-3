@@ -49,8 +49,7 @@ public class reservaTest {
     	datos.getMapaReservas().clear();
     	Reserva.setNumeroReservas(0);
     	
-		List<Cliente> userList = 
-				new ArrayList<Cliente>(datos.getMapaClientes().values());
+		List<Cliente> userList = new ArrayList<Cliente>(datos.getMapaClientes().values());
     	Cliente cli1=datos.getMapaClientes().get("samisanti2011");
     	Cliente cli2=datos.getMapaClientes().get("daniela");
     	
