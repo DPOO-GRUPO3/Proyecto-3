@@ -11,8 +11,8 @@ usuario: laura
 contraseña: 123
 
 Cliente
-usuario: daniela
-contraseña: 1234
+usuario: samisanti2011
+contraseña: Hola
 
 Administrador
 usuario: dav
