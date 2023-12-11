@@ -367,7 +367,7 @@ private String generarTextoCarros(){
 }
 private void actualizarArchivoCarros() throws IOException {
 	String texto=generarTextoCarros();
-	FileWriter fichero = new FileWriter("data/carro.txt");
+	FileWriter fichero = new FileWriter("data/carros.txt");
 	fichero.write(texto);
 	fichero.close();
 }

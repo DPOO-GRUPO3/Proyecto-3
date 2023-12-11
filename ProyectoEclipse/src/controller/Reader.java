@@ -205,7 +205,11 @@ public Alquiler descomprimirAlquiler(String linea,HashMap<String, Sede> mapaSede
 	alq.setTarifaExcedente(mapaTarifaExcedente.get(tarifaExcedente));
 	alq.setTarifa(mapaTarifa.get(temporada));
 	alq.setReserva(mapaReservas.get(reserva));
-	return alq;}
+	//poner alquiler a carro
+	
+	mapaCar.get(placa).setUsoActual(alq);
+	return alq;
+	}
 
 //DECIMO OBJETO: EMPLEADO
 public Empleado descomprimirEmpleado(String linea, HashMap<String, Sede> mapaSedes, HashMap<String, Empleado> mapaEmpleados)
