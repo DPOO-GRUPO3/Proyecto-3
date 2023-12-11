@@ -37,7 +37,8 @@ public class Writer {
 		String nombreSede = carro.getSede().getNombre();
 		String estado = carro.getEstado();
 		String fechaDisp = String.valueOf(carro.getFechaDispCons());
-		String str = placa + ";" + marca + ";" + modelo + ";" + color + ";" + tipoTransmision + ";" + ";"
+		
+		String str = placa + ";" + marca + ";" + modelo + ";" + color + ";" + tipoTransmision + ";"
 				+ nombreCategoria + ";" + nombreSede + ";" + estado + ";" + fechaDisp+";" 
 				+ carro.getTipo()+";"+carro.getPorcentajeRiesgoPrima();
 		return str;

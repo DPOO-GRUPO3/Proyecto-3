@@ -1,5 +1,5 @@
-ABC123;renault;45;azul;a;familiares;centro;alquilado;2023-12-01T12:45:00;auto;2
-DEF123;mazda;10;plateado;b;familiares;norte;Disponible;null;auto;2
-GHI123;twingo;7;plateado;b;familiares;sur;Disponible;null;auto;2
-NEK123;chevrolet;10;plateado;b;todoterreno;norte;Disponible;null;auto;5
 MHIL23;lamborgini;7;negro;b;lujoso;sur;Disponible;null;auto;10
+NEK123;chevrolet;10;plateado;b;todoterreno;norte;Disponible;null;auto;5
+GHI123;twingo;7;plateado;b;familiares;sur;alquilado;null;auto;2
+DEF123;mazda;10;plateado;b;familiares;norte;Disponible;null;auto;2
+ABC123;renault;45;azul;a;familiares;centro;alquilado;2023-12-01T12:45;auto;2
