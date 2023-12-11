@@ -11,8 +11,8 @@ usuario: laura
 contraseña: 123
 
 Cliente
-usuario: samisanti2011
-contraseña: Hola
+usuario: MarioBros
+contraseña: Dpoo21
 
 Administrador
 usuario: dav
