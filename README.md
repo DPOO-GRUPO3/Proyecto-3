@@ -1,8 +1,11 @@
 # Proyecto-3
 
 /*Revisar este Repositorio y no el archivo comprimido en Bloque neon*/ 
-Revisar docuemento de diseño para mayored detalles de como correr la aplicación.
+
+Revisar documento de diseño dentro de la carpeta Documentos y Diagramas para mayores detalles de como correr la aplicación.
 NOTE QUE PARA GENERAR PERSISTENCIA AL CREAR RESERVA DEBE DARLE LOGOUT DESPUES DE CREARLA.
+
+
 Empleado
 usuario: laura
 contraseña: 123
