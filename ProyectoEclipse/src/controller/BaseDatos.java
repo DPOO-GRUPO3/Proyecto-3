@@ -144,7 +144,7 @@ private String generarTextoTemporadas(){
 	}
 	return texto;
 }
-private void actualizarArchivoTemporadas() throws IOException {
+public void actualizarArchivoTemporadas() throws IOException {
 	String texto=generarTextoTemporadas();
 	FileWriter fichero = new FileWriter("data/temporadas.txt");
 	fichero.write(texto);
