@@ -1,5 +1,8 @@
 package model;
 
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
+
 public class Factura {
 	
 	//Atributos
@@ -125,9 +128,11 @@ public class Factura {
 		{
 			this.descuento = 0.1;
 		}
-			
 		
-		this.total= precioTarifa + precioExcedente + precioSeguro + this.precioLicencias + precioRiesgoPrima;
+		LocalDateTime inicio=alquiler.getFechaInicio();
+		LocalDateTime fin=alquiler.getFechaDeb();
+		long diffDays=ChronoUnit.DAYS.between(inicio, fin);
+		this.total= diffDays*(precioTarifa + precioExcedente + precioSeguro + this.precioLicencias + precioRiesgoPrima);
 		
 		descuento = descuento*this.total;
 		
