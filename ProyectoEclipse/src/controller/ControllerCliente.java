@@ -188,13 +188,14 @@ public ArrayList<String> vehículosDisponiblesEnSedeEnFechaDada(LocalDateTime fe
 	
 	for(Carro carro:mapaCarros.values()) {
 		Sede sedeCar=sedeEnLaQueEstaraUnCarrodadaFecha(carro, fecha);
+		if(sedeCar!=null) {
 		if(nombreSede.equals(sedeCar.getNombre())) {
 			Writer w= new Writer();
 			carrosEnSede.add(w.comprimirCarro(carro));
 		}
 	}
 	
-	
+	}
 	return carrosEnSede;
 	
 }
